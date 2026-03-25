@@ -80,8 +80,8 @@ const GamesPage = () => {
     <Layout>
       {/* Hero */}
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 overflow-hidden">
-        <img src={businessGameImg} alt="Бизнес-игры" className="absolute inset-0 w-full h-full object-cover" width={1280} height={720} />
-        <div className="absolute inset-0 bg-nature-deep/70" />
+        <img src={rocksTextureImg} alt="Бизнес-игры" className="absolute inset-0 w-full h-full object-cover" width={1280} height={720} />
+        <div className="absolute inset-0 bg-nature-deep/60" />
         <div className="relative z-10 container-wide px-4 sm:px-6 lg:px-8">
           <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-3">Бизнес-игры</p>
           <h1 className="font-heading font-black text-3xl sm:text-5xl text-primary-foreground mb-4 max-w-2xl">
