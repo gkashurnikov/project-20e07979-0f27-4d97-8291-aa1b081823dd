@@ -35,7 +35,7 @@ const Header = () => {
     >
       <div className="container-wide flex items-center justify-between h-16 sm:h-20 px-4 sm:px-6 lg:px-8">
         <Link to="/" className="font-heading font-bold text-xl sm:text-2xl text-primary-foreground tracking-tight">
-          TRANSFORM<span className="text-accent">PLAY</span>
+          PLAY<span className="text-accent">2</span>CHANGE
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
