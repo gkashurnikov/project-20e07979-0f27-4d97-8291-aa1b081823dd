@@ -147,6 +147,16 @@ const OutdoorPage = () => {
       >
         {selectedFormat !== null && (
           <div>
+            <div className="-mx-5 -mt-5 sm:-mx-6 sm:-mt-6 mb-5 overflow-hidden rounded-b-none">
+              <img
+                src={formats[selectedFormat].image}
+                alt={formats[selectedFormat].title}
+                className="w-full h-40 sm:h-48 object-cover"
+                loading="lazy"
+                width={1280}
+                height={512}
+              />
+            </div>
             <p className="text-foreground leading-relaxed mb-4">{formats[selectedFormat].full}</p>
             <h4 className="font-heading font-bold text-sm text-foreground mb-2 uppercase tracking-wider">Бизнес-задачи</h4>
             <ul className="space-y-1.5 mb-4">
