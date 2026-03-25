@@ -4,6 +4,7 @@ import { ArrowRight, Puzzle, Brain, Target, Users, BarChart3, Zap, Lightbulb, La
 import Layout from "@/components/Layout";
 import Modal from "@/components/Modal";
 import businessGameImg from "@/assets/business-game.jpg";
+import rocksTextureImg from "@/assets/rocks-texture.jpg";
 
 const games = [
   {
@@ -93,8 +94,15 @@ const GamesPage = () => {
       </section>
 
       {/* Grid */}
-      <section className="section-padding bg-background">
-        <div className="container-wide">
+      <section className="relative section-padding bg-background overflow-hidden">
+        {/* Decorative rock texture inspired by natural stone patterns */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-[0.06] pointer-events-none">
+          <img src={rocksTextureImg} alt="" className="w-full h-full object-cover" aria-hidden="true" />
+        </div>
+        <div className="absolute bottom-0 left-0 w-1/4 h-2/3 opacity-[0.04] pointer-events-none rotate-180">
+          <img src={rocksTextureImg} alt="" className="w-full h-full object-cover" aria-hidden="true" />
+        </div>
+        <div className="relative z-10 container-wide">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {games.map((game, i) => (
               <div
