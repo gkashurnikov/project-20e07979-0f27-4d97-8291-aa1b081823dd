@@ -4,6 +4,11 @@ import { ArrowRight, Tent, Sailboat, Mountain, Truck, Shuffle, HelpCircle } from
 import Layout from "@/components/Layout";
 import Modal from "@/components/Modal";
 import campfireImg from "@/assets/campfire.jpg";
+import outdoorCampImg from "@/assets/outdoor-camp.jpg";
+import outdoorSailingImg from "@/assets/outdoor-sailing.jpg";
+import outdoorHikingImg from "@/assets/outdoor-hiking.jpg";
+import outdoorOffroadImg from "@/assets/outdoor-offroad.jpg";
+import outdoorHybridImg from "@/assets/outdoor-hybrid.jpg";
 
 const formats = [
   {
@@ -14,6 +19,7 @@ const formats = [
     tasks: ["Командное взаимодействие", "Распределение ресурсов", "Коммуникация в условиях стресса"],
     format: "2–3 дня, 15–80 участников",
     fit: "Команды, которые хотят укрепить взаимодействие в комфортных условиях",
+    image: outdoorCampImg,
   },
   {
     icon: Sailboat,
@@ -23,6 +29,7 @@ const formats = [
     tasks: ["Лидерство в условиях неопределённости", "Быстрое принятие решений", "Доверие и делегирование"],
     format: "2–5 дней, 10–60 участников",
     fit: "Управленческие команды, нуждающиеся в развитии лидерских навыков",
+    image: outdoorSailingImg,
   },
   {
     icon: Mountain,
@@ -32,6 +39,7 @@ const formats = [
     tasks: ["Стратегическое планирование", "Устойчивость и адаптивность", "Общее видение"],
     format: "3–7 дней, 10–30 участников",
     fit: "Команды топ-менеджеров, проходящие стратегическую трансформацию",
+    image: outdoorHikingImg,
   },
   {
     icon: Truck,
@@ -41,6 +49,7 @@ const formats = [
     tasks: ["Кризисное управление", "Координация между командами", "Ресурсное планирование"],
     format: "2–4 дня, 15–50 участников",
     fit: "Кросс-функциональные команды, работающие над сложными проектами",
+    image: outdoorOffroadImg,
   },
   {
     icon: Shuffle,
@@ -50,6 +59,7 @@ const formats = [
     tasks: ["Комплексное развитие", "Адаптивность формата", "Максимальное вовлечение"],
     format: "2–5 дней, 10–100 участников",
     fit: "Компании с уникальными задачами, требующие индивидуального подхода",
+    image: outdoorHybridImg,
   },
 ];
 
@@ -137,6 +147,16 @@ const OutdoorPage = () => {
       >
         {selectedFormat !== null && (
           <div>
+            <div className="-mx-5 -mt-5 sm:-mx-6 sm:-mt-6 mb-5 overflow-hidden rounded-b-none">
+              <img
+                src={formats[selectedFormat].image}
+                alt={formats[selectedFormat].title}
+                className="w-full h-40 sm:h-48 object-cover"
+                loading="lazy"
+                width={1280}
+                height={512}
+              />
+            </div>
             <p className="text-foreground leading-relaxed mb-4">{formats[selectedFormat].full}</p>
             <h4 className="font-heading font-bold text-sm text-foreground mb-2 uppercase tracking-wider">Бизнес-задачи</h4>
             <ul className="space-y-1.5 mb-4">
