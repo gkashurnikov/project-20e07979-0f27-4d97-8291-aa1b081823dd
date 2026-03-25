@@ -167,7 +167,7 @@ const ContactPage = () => {
                 <div className="space-y-3 text-sm text-muted-foreground">
                   <div>
                     <span className="font-medium text-foreground block">Email</span>
-                    info@transformplay.ru
+                    info@play2change.ru
                   </div>
                   <div>
                     <span className="font-medium text-foreground block">Телефон</span>

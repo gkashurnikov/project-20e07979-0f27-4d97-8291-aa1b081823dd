@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <Link to="/" className="font-heading font-bold text-xl text-primary-foreground tracking-tight">
-              TRANSFORM<span className="text-accent">PLAY</span>
+              PLAY<span className="text-accent">2</span>CHANGE
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/60">
               Трансформация бизнеса через игровые форматы, симуляции и иммерсивные программы с измеримым результатом.
@@ -40,7 +40,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-primary-foreground mb-4">Контакты</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/60">
-              <span>info@transformplay.ru</span>
+              <span>info@play2change.ru</span>
               <span>+7 (495) 123-45-67</span>
               <span>Москва, Россия</span>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 text-center text-xs text-primary-foreground/40">
-          © {new Date().getFullYear()} TransformPlay. Все права защищены.
+          © {new Date().getFullYear()} Play2Change. Все права защищены.
         </div>
       </div>
     </footer>
