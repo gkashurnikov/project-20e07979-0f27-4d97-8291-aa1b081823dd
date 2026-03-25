@@ -4,6 +4,11 @@ import { ArrowRight, Tent, Sailboat, Mountain, Truck, Shuffle, HelpCircle } from
 import Layout from "@/components/Layout";
 import Modal from "@/components/Modal";
 import campfireImg from "@/assets/campfire.jpg";
+import outdoorCampImg from "@/assets/outdoor-camp.jpg";
+import outdoorSailingImg from "@/assets/outdoor-sailing.jpg";
+import outdoorHikingImg from "@/assets/outdoor-hiking.jpg";
+import outdoorOffroadImg from "@/assets/outdoor-offroad.jpg";
+import outdoorHybridImg from "@/assets/outdoor-hybrid.jpg";
 
 const formats = [
   {
