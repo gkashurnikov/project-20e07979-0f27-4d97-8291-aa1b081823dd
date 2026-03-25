@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ExternalLink, Theater, Users, Clock, MessageSquare } from "lucide-react";
 import Layout from "@/components/Layout";
 import Modal from "@/components/Modal";
-import campfireImg from "@/assets/campfire.jpg";
+import theatreImg from "@/assets/theatre.jpg";
 
 const PlaybackPage = () => {
   const [theatreModalOpen, setTheatreModalOpen] = useState(false);
@@ -27,7 +27,7 @@ const PlaybackPage = () => {
     <Layout>
       {/* Hero */}
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 overflow-hidden">
-        <img src={campfireImg} alt="Плейбэк" className="absolute inset-0 w-full h-full object-cover" width={1280} height={720} />
+        <img src={theatreImg} alt="Плейбэк" className="absolute inset-0 w-full h-full object-cover" width={1280} height={720} />
         <div className="absolute inset-0 bg-nature-deep/70" />
         <div className="relative z-10 container-wide px-4 sm:px-6 lg:px-8">
           <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-3">Плейбэк-театр</p>
