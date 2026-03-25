@@ -40,7 +40,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-primary-foreground mb-4">Контакты</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/60">
-              <span>info@transformplay.ru</span>
+              <span>info@play2change.ru</span>
               <span>+7 (495) 123-45-67</span>
               <span>Москва, Россия</span>
             </div>
